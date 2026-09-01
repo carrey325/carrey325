@@ -1,6 +1,6 @@
 ### Hi, I'm Carrey
 
-Exploring the intersection of **quantitative finance and AI**.
+Experimenting, thinking and learning. Exploring the intersection of **quantitative finance and AI**.
 
 M.S. in Mathematical Finance & Financial Technology at Boston University.
 
