@@ -1,16 +1,16 @@
-## Hi there 👋
+### Hi, I'm Carrey
 
-<!--
-**carrey325/carrey325** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Exploring the intersection of **quantitative finance and AI**.
 
-Here are some ideas to get you started:
+M.S. in Mathematical Finance & Financial Technology at Boston University.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Contributions
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+          srcset="https://raw.githubusercontent.com/carrey325/carrey325/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)"
+          srcset="https://raw.githubusercontent.com/carrey325/carrey325/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution snake"
+       src="https://raw.githubusercontent.com/carrey325/carrey325/output/github-contribution-grid-snake.svg">
+</picture>
