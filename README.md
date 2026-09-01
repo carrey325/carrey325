@@ -4,7 +4,6 @@ Exploring the intersection of **quantitative finance and AI**.
 
 M.S. in Mathematical Finance & Financial Technology at Boston University.
 
-### Contributions
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
