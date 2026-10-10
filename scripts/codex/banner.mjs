@@ -81,7 +81,7 @@ export function renderBanner(document) {
   ];
   const body = [];
   body.push('<rect width="1200" height="366" rx="16" fill="#ffffff"/>');
-  body.push(text(PADDING, 38, 'Codex activity', 'font-size="23" font-weight="600"'));
+  body.push(text(PADDING, 38, 'Building with AI: Codex activity', 'font-size="23" font-weight="600"'));
   body.push(text(WIDTH - PADDING, 38, `${map.startDateIso} — ${todayIso}`, 'text-anchor="end" font-size="15" fill="#7b8087"'));
   const step = (WIDTH - PADDING * 2 + 4) / map.columnCount;
   const cellSize = step - 4;

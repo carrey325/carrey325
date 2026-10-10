@@ -20,6 +20,12 @@ git push
 
 The analyzer is pinned to `codex-usage-analyzer@0.4.1`, the same release used by the upstream profile CLI. It reads aggregate usage through Codex app-server. Credentials, prompts, responses and session files are not placed in this repository.
 
-The README now uses the SVG stored in this repository, rather than the upstream hosted PNG. Running the upstream `codex-usage-profile submit` command alone does **not** refresh this SVG. There is no scheduled refresh configured by this change.
+The README now uses the SVG stored in this repository, rather than the upstream hosted PNG. Running the upstream `codex-usage-profile submit` command alone does **not** refresh this SVG.
+
+## Daily automatic refresh
+
+A local Codex scheduled task named **每天更新 GitHub Codex 用量** runs daily at **09:00 America/New_York**. It pulls the latest profile source, runs `npm run update:codex`, commits only the generated SVG, and pushes to `main`. Only failed runs notify the owner. The retired contribution-snake workflow has been removed.
+
+Keep the computer powered on, the Codex desktop app running, and the local Codex and GitHub logins valid. This job uses the local Codex account session; it does not upload authentication files to GitHub Actions. Manage or pause the schedule in the desktop app's Scheduled view. The commands above remain available for a manual refresh.
 
 Run `npm test` to verify rolling-year boundaries, leap years and unavailable values.
