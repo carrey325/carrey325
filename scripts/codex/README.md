@@ -24,8 +24,8 @@ The README now uses the SVG stored in this repository, rather than the upstream 
 
 ## Daily automatic refresh
 
-A local Codex scheduled task named **每天更新 GitHub Codex 用量** runs daily at **09:00 America/New_York**. It pulls the latest profile source, runs `npm run update:codex`, commits only the generated SVG, and pushes to `main`. Only failed runs notify the owner. The retired contribution-snake workflow has been removed.
+Daily refresh is being moved to GitHub-hosted Actions in a separate private automation repository, scheduled for **13:17 UTC**. The job reads current account usage, regenerates the SVG, and publishes only `assets/codex-activity.svg` to this repository. It does not depend on a personal computer or the Codex desktop app running. The retired contribution-snake workflow has been removed.
 
-Keep the computer powered on, the Codex desktop app running, and the local Codex and GitHub logins valid. This job uses the local Codex account session; it does not upload authentication files to GitHub Actions. Manage or pause the schedule in the desktop app's Scheduled view. The commands above remain available for a manual refresh.
+**Setup status:** the previous local schedule is paused. Cloud refresh remains disabled pending a dedicated Codex login, private GitHub Actions secrets, and a successful live run. Credentials and workflow logs stay in the private automation repository; this public repository contains only the renderer and aggregate SVG. Cloud credentials are refreshed and saved for subsequent runs. Revoked or expired credentials may still require reauthorization. The commands above remain available for a manual refresh.
 
 Run `npm test` to verify rolling-year boundaries, leap years and unavailable values.
