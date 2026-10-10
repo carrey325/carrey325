@@ -24,7 +24,7 @@ The README now uses the SVG stored in this repository, rather than the upstream 
 
 ## Weekly automatic refresh
 
-A local Codex scheduled task named **每周一更新 GitHub Codex 用量** runs every **Monday at 09:00 America/New_York**. It pulls the latest profile source, reads current account usage, regenerates the SVG, and commits and pushes only `assets/codex-activity.svg` to `main`. Only failed runs notify the owner. The retired contribution-snake workflow has been removed.
+A local Codex scheduled task named **每周六晚更新 GitHub Codex 用量** runs every **Saturday at 22:00 America/New_York**. It first checks the actual local time: if it wakes outside Saturday's 22:00 minute, it skips that occurrence and waits until next week, without catch-up runs. A run started within that minute may finish normally. It pulls the latest profile source, reads current account usage, regenerates the SVG, and commits and pushes only `assets/codex-activity.svg` to `main`. Only failed runs notify the owner. The retired contribution-snake workflow has been removed.
 
 Keep the computer powered on, the Codex desktop app running, and the local Codex and GitHub logins valid when the task runs. Credentials remain local. The proposed GitHub Actions cloud workflow is disabled and no cloud login credentials were configured. Manage or pause the weekly schedule in the desktop app. The commands above remain available for a manual refresh.
 
