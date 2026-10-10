@@ -4,6 +4,9 @@ Experimenting, thinking and learning. Exploring the intersection of **quantitati
 
 M.S. in Mathematical Finance & Financial Technology at Boston University.
 
+### Building with Codex
+
+<a href="https://codex-usage-profile.meleeisdeveloping.chatgpt.site/api/share/carrey325"><img width="50%" src="https://codex-usage-profile.meleeisdeveloping.chatgpt.site/u/carrey325/card.png" alt="Carrey Chen's Codex usage profile" /></a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
