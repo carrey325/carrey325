@@ -1,0 +1,11 @@
+{
+  "name": "carrey325-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update:codex": "node scripts/codex/update.mjs",
+    "test": "node --test scripts/codex/banner.test.mjs"
+  },
+  "dependencies": { "codex-usage-analyzer": "0.4.1" },
+  "engines": { "node": ">=20" }
+}
