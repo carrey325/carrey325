@@ -22,10 +22,10 @@ The analyzer is pinned to `codex-usage-analyzer@0.4.1`, the same release used by
 
 The README now uses the SVG stored in this repository, rather than the upstream hosted PNG. Running the upstream `codex-usage-profile submit` command alone does **not** refresh this SVG.
 
-## Daily automatic refresh
+## Weekly automatic refresh
 
-Daily refresh is being moved to GitHub-hosted Actions in a separate private automation repository, scheduled for **13:17 UTC**. The job reads current account usage, regenerates the SVG, and publishes only `assets/codex-activity.svg` to this repository. It does not depend on a personal computer or the Codex desktop app running. The retired contribution-snake workflow has been removed.
+A local Codex scheduled task named **每周一更新 GitHub Codex 用量** runs every **Monday at 09:00 America/New_York**. It pulls the latest profile source, reads current account usage, regenerates the SVG, and commits and pushes only `assets/codex-activity.svg` to `main`. Only failed runs notify the owner. The retired contribution-snake workflow has been removed.
 
-**Setup status:** the previous local schedule is paused. Cloud refresh remains disabled pending a dedicated Codex login, private GitHub Actions secrets, and a successful live run. Credentials and workflow logs stay in the private automation repository; this public repository contains only the renderer and aggregate SVG. Cloud credentials are refreshed and saved for subsequent runs. Revoked or expired credentials may still require reauthorization. The commands above remain available for a manual refresh.
+Keep the computer powered on, the Codex desktop app running, and the local Codex and GitHub logins valid when the task runs. Credentials remain local. The proposed GitHub Actions cloud workflow is disabled and no cloud login credentials were configured. Manage or pause the weekly schedule in the desktop app. The commands above remain available for a manual refresh.
 
 Run `npm test` to verify rolling-year boundaries, leap years and unavailable values.
