@@ -4,4 +4,4 @@ Experimenting, thinking and learning. Exploring the intersection of **quantitati
 
 M.S. in Mathematical Finance & Financial Technology at Boston University.
 
-<img width="100%" src="./assets/codex-activity.svg" alt="Codex activity over the last year, with lifetime tokens, daily peak, longest task, longest streak and current streak" />
+<img width="100%" src="./assets/codex-activity.svg?v=2" alt="Building with AI: Codex activity over the last year, with lifetime tokens, daily peak, longest task, longest streak and current streak" />
